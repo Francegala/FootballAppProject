@@ -30,6 +30,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private EditText email, password;
     private Button btn_login;
+    private Button btn_skip;
     private TextView link_regist;
     private ProgressBar loading;
     private static String URL_LOGIN = "http://192.168.1.68/android_register_login/login.php";
@@ -50,6 +51,7 @@ public class LoginActivity extends AppCompatActivity {
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
         btn_login = findViewById(R.id.btn_login);
+        btn_skip = findViewById(R.id.btn_Skip);
         link_regist = findViewById(R.id.link_regist);
 
         btn_login.setOnClickListener(new View.OnClickListener() {
@@ -72,6 +74,14 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(LoginActivity.this, RegisterActivity.class ));
+            }
+        });
+
+        btn_skip.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, AtualMatch.class ));
             }
         });
 

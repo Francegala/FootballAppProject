@@ -64,6 +64,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <Button
+        android:id="@+id/btn_Skip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutpassword"
+        android:layout_marginTop="126dp"
+        android:backgroundTint="@color/colorPrimary2"
+        android:text="Skip"
+        android:textColor="@color/colorText" />
+
     <TextView
         android:id="@+id/link_regist"
         android:layout_marginBottom="20dp"
@@ -73,6 +83,7 @@
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
 </RelativeLayout>
 
 
