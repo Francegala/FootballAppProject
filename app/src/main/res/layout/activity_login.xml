@@ -59,7 +59,7 @@
         android:layout_below="@+id/layoutpassword"
         android:layout_marginTop="30dp"
         android:backgroundTint="@color/colorPrimary2"
-        android:text="LOGIN"
+        android:text="asdfghjkddfhs"
         android:textColor="@color/colorText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
