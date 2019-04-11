@@ -24,6 +24,25 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
+/***
+ ** Il layout è da unirlo a quello di actual match e le funzioni in pratica è da esportare quello che è in locale online su database
+ ***/
+
+/**
+ * Dear Programmer,
+ *
+ * When I wrote this code, only God and I knew how it worked.
+ * Now, only God knows it !
+ *
+ * Therefore, if you are trying to optimize this routine and
+ * it fails (most surely), please increase this counter
+ * as a warning for the next person:
+ *
+ * total_hours_wasted_here: 5
+ *
+ * Yours sincerely,
+ * Francesco Galassi
+ **/
 public class AttributeRecorderActivity extends AppCompatActivity {
     private Button btn_home, btn_newmatch;
     private TextView tagid, stime, against, matches_list;
@@ -130,7 +149,21 @@ public class AttributeRecorderActivity extends AppCompatActivity {
 
 
     }
-
+    /**
+     *  Hello there!
+     *
+     *     Nice to see you. I didn't expect you here and
+     *     I'm sorry, there is no cake.
+     *
+     *     Feel free to look and learn,
+     *     but please don't steal the whole thing.
+     *
+     *     Send me a message if you have questions.
+     *
+     *     Sincerely,
+     *     Francesco :)
+     *
+     **/
     private void newMatch(){
 
         final String tagid = this.tagid.getText().toString().trim();

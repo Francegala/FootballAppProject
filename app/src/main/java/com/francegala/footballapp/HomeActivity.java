@@ -40,6 +40,22 @@ import java.util.Map;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
+/**
+ * Dear Programmer,
+ *
+ * When I wrote this code, only God and I knew how it worked.
+ * Now, only God knows it !
+ *
+ * Therefore, if you are trying to optimize this routine and
+ * it fails (most surely), please increase this counter
+ * as a warning for the next person:
+ *
+ * total_hours_wasted_here: 10
+ *
+ * Yours sincerely,
+ * Francesco Galassi
+ **/
+
 public class HomeActivity extends AppCompatActivity {
 
     private static final String TAG = HomeActivity.class.getSimpleName(); //getting the info
@@ -354,7 +370,21 @@ public class HomeActivity extends AppCompatActivity {
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(stringRequest);
     }
-
+    /**
+     *  Hello there!
+     *
+     *     Nice to see you. I didn't expect you here and
+     *     I'm sorry, there is no cake.
+     *
+     *     Feel free to look and learn,
+     *     but please don't steal the whole thing.
+     *
+     *     Send me a message if you have questions.
+     *
+     *     Sincerely,
+     *     Francesco :)
+     *
+     **/
     public String getStringImage(Bitmap bitmap){
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         bitmap.compress(Bitmap.CompressFormat.JPEG, 100, byteArrayOutputStream);

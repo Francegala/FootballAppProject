@@ -24,6 +24,22 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Dear Programmer,
+ *
+ * When I wrote this code, only God and I knew how it worked.
+ * Now, only God knows it !
+ *
+ * Therefore, if you are trying to optimize this routine and
+ * it fails (most surely), please increase this counter
+ * as a warning for the next person:
+ *
+ * total_hours_wasted_here: 7
+ *
+ * Yours sincerely,
+ * Francesco Galassi
+ **/
+
 public class RegisterActivity extends AppCompatActivity {
 
     private EditText name, email, password, c_password;
@@ -116,3 +132,18 @@ public class RegisterActivity extends AppCompatActivity {
         requestQueue.add(stringRequest);
     }
 }
+/**
+ *  Hello there!
+ *
+ *     Nice to see you. I didn't expect you here and
+ *     I'm sorry, there is no cake.
+ *
+ *     Feel free to look and learn,
+ *     but please don't steal the whole thing.
+ *
+ *     Send me a message if you have questions.
+ *
+ *     Sincerely,
+ *     Francesco :)
+ *
+ **/

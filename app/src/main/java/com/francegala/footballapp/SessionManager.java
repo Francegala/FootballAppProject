@@ -5,7 +5,21 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 
 import java.util.HashMap;
-
+/**
+ * Dear Programmer,
+ *
+ * When I wrote this code, only God and I knew how it worked.
+ * Now, only God knows it !
+ *
+ * Therefore, if you are trying to optimize this routine and
+ * it fails (most surely), please increase this counter
+ * as a warning for the next person:
+ *
+ * total_hours_wasted_here: 3
+ *
+ * Yours sincerely,
+ * Francesco Galassi
+ **/
 public class SessionManager {
 
     SharedPreferences sharedPreferences;
@@ -57,7 +71,21 @@ public class SessionManager {
         user.put(ID, sharedPreferences.getString(ID, null));
         return user;
     }
-
+    /**
+     *  Hello there!
+     *
+     *     Nice to see you. I didn't expect you here and
+     *     I'm sorry, there is no cake.
+     *
+     *     Feel free to look and learn,
+     *     but please don't steal the whole thing.
+     *
+     *     Send me a message if you have questions.
+     *
+     *     Sincerely,
+     *     Francesco :)
+     *
+     **/
      public void logout(){
         editor.clear();
         editor.commit();

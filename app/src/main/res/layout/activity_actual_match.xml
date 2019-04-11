@@ -11,13 +11,13 @@
         android:layout_width="210dp"
         android:layout_height="44dp"
         android:layout_marginStart="44dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="92dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
         android:hint="Against"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.692"
+        app:layout_constraintHorizontal_bias="0.846"
         app:layout_constraintStart_toEndOf="@+id/editDate"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,24 +26,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:ems="10"
         android:hint="MatchName (ID)"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/editDate"
         android:layout_width="138dp"
         android:layout_height="45dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="8dp"
         android:ems="10"
         android:hint="When (Date)"
         android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -52,88 +59,100 @@
         android:layout_width="171dp"
         android:layout_height="51dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="8dp"
         android:ems="10"
         android:hint="Position"
         android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/editGoal"
         android:layout_width="171dp"
         android:layout_height="51dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="164dp"
+        android:layout_marginTop="84dp"
         android:layout_marginEnd="28dp"
         android:ems="10"
         android:hint="Type of Goal"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintStart_toEndOf="@+id/goalButton"
         app:layout_constraintTop_toBottomOf="@+id/editAgainst" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/editSave"
         android:layout_width="171dp"
         android:layout_height="51dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="28dp"
         android:ems="10"
         android:hint="Type of Save"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/button3"
-        app:layout_constraintTop_toBottomOf="@+id/editText5" />
+        app:layout_constraintStart_toEndOf="@+id/saveButton"
+        app:layout_constraintTop_toBottomOf="@+id/editGoal" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/goalButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
         android:text="+ Goal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editPosition" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/saveButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
         android:text="+ Save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/goalButton" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/passButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:text="+ Pass"
-        app:layout_constraintEnd_toStartOf="@+id/button5"
+        app:layout_constraintEnd_toStartOf="@+id/tackleButton"
         app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/saveButton" />
 
     <Button
         android:id="@+id/assistButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="36dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="+ Assists"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4"
-        app:layout_constraintVertical_bias="0.358" />
+        app:layout_constraintTop_toBottomOf="@+id/passButton"
+        app:layout_constraintVertical_bias="0.104" />
 
     <Button
         android:id="@+id/dribbleButton"
@@ -146,20 +165,23 @@
         android:text="+ Dribble"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toEndOf="@+id/assistButton"
-        app:layout_constraintTop_toBottomOf="@+id/button5"
-        app:layout_constraintVertical_bias="0.358" />
+        app:layout_constraintTop_toBottomOf="@+id/tackleButton"
+        app:layout_constraintVertical_bias="0.104" />
 
     <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
+        android:id="@+id/tackleButton"
+        android:layout_width="136dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="56dp"
         android:text="+ Tackles won"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText6" />
+        app:layout_constraintHorizontal_bias="0.966"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSave" />
 
     <Button
         android:id="@+id/createButton"
@@ -172,9 +194,25 @@
         android:text="Create"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintHorizontal_bias="0.419"
         app:layout_constraintStart_toEndOf="@+id/editPosition"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.322" />
+        app:layout_constraintTop_toBottomOf="@+id/editAgainst"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <Button
+        android:id="@+id/viewerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginBottom="72dp"
+        android:text="View"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.985"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assistButton"
+        app:layout_constraintVertical_bias="0.375" />
 
 </android.support.constraint.ConstraintLayout>
